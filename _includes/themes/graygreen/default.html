@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }} &mdash; saltvedt.net</title>
+		{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+		<meta name="author" content="{{ site.author.name }}">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+		<link href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+		<script src="{{ ASSET_PATH }}/js/site.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a id="logolink" href="http://saltvedt.net/">saltvedt.net</a>
+				<span style="color: #CFF09E">b</span><span style="color: #A8DBA8">y</span>
+				Torstein Saltvedt
+			</h1>
+			<a href="#" id="menuButton">read more</a>
+		</header>
+			<div id="megaNavigationContainer">
+				<table id="megaNavigation">
+					<thead>
+						<tr>
+							<th width="23%">Date</th>
+							<th>Title</th>
+						</tr>
+					</thead>
+						<tbody>
+					 	{% for post in site.posts %}
+							 <tr>
+								 <td>{{ post.date | date: '%Y-%m-%d' }}</td>
+								 <td><a href="{{ site.production_url }}{{ post.url }}"/>{{ post.title }}</a></td>
+							 </tr>
+						{% endfor %}
+						</tbody>
+				</table>
+			</div>
+
+			<div id="main">
+				<h2>{{ page.title }}</h2>
+
+				<div id="content">
+					{{ content }}
+				</div>
+			</div>
+
+			<footer>
+
+			</footer>
+
+		{% include JB/analytics %}
+	</body>
+</html>
