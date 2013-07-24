@@ -51,7 +51,6 @@ a#menuButton {
 	margin: 3.3em;
 	border: 1px solid #ddd;
 	text-align: center;
-	float: right;
 	color: #333;
 }
 
@@ -60,7 +59,7 @@ a#menuButton:hover {
 }
 
 div#megaNavigationContainer {
-	width: 89%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -109,7 +108,7 @@ h1 a#logolink {
 
 #main {
 	border-top: 1px solid #777;
-	padding: 50px;
+	padding: 53px;
 }
 
 #main h2 {
@@ -118,8 +117,15 @@ h1 a#logolink {
 	margin-bottom: 10px;
 }
 
+#main h3 {
+	font-size: 1.5em;
+	color: #666;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
 #content p {
-	line-height: 1.4em;
+	line-height: 1.5em;
 	font-size: 1.4em;
 	font-family: "Open Sans", sans-serif;
 }
