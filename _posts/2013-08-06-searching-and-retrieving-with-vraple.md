@@ -17,4 +17,4 @@ So Vraples purpose is to figure out if you're in search or retrieval mode, and a
 
 Right now it only manages to send you to DuckDuckGo and WolframAlpha, but in the future it could send you to Google Maps if you enter an address, or a look-up service if you enter a phonenumber.
 
-You can test Vraple for yourself at [Vraple.com](http://vraple.com).
+You can test Vraple for yourself at [Vraple.com](http://vraple.com). You can [view the source on GitHub](https://github.com/saltvedt/vraple).
