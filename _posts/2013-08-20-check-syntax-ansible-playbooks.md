@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check syntax of all ansible playbooks
+title: Check Syntax of All Ansible Playbooks
 ---
 
 Here is a one-line bash script for checking if all your ansible playbooks have correct YAML syntax.
