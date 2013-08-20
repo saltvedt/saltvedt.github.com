@@ -3,7 +3,7 @@ layout: post
 title: Check syntax of all ansible playbooks
 ---
 
-Here is a one-line basc script for checking if all your ansible playbooks have correct YAML syntax.
+Here is a one-line bash script for checking if all your ansible playbooks have correct YAML syntax.
 
     find . -name '*.yml' -not -path './roles/*/files/*' | xargs -t -n1 ansible-playbook --syntax-check -i staging
 
