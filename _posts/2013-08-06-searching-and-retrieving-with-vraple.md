@@ -5,6 +5,8 @@ title: Searching and Retrieving with Vraple
 
 {% include JB/setup %}
 
+<img src="/assets/vraple.png" class="img-rounded" style="margin-left: auto; margin-right: auto">
+
 I've just finished what I would consider the simplest version of Vraple that I could publish. Explaining what Vraple does is best done by example, you should check some out at [Vraple.com](http://vraple.com). One example would be searching for "!amazon lotr". Vraple will then send you to DuckDuckGo, which sends you to an Amazon search for "lotr". If you click the back-button, you will go back to Vraple, which will send you to the Google search for "!amazon lotr".
 
 General purpose search engines hasn't really changed much the last decade. You enter some keywords and are presented with the most relevant results. We've got some improvements, like Google Instant, but nothing really drastic.
