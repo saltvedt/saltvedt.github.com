@@ -4,7 +4,7 @@ title: About me
 ---
 {% include JB/setup %}
 
-I'm a 24 year software developer living in Bergen, Norway. This is my website.
+I'm a 25 year software developer living in Bergen, Norway. This is my website.
 
 You can email me at: torstein.saltvedt@gmail.com
 
