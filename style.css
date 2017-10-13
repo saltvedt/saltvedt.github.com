@@ -1,0 +1,125 @@
+
+/*
+	Alternatives!
+
+	background: url(noise.png), linear-gradient(90deg, #022834, #00141f);
+	background: url(noise.png), linear-gradient(90deg, #022834, #00202b);
+	background: linear-gradient(90deg, #022834, #00202b);
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background: url(noise.png), linear-gradient(90deg, #022834, #001c28);
+	background-color: #00202b;
+	color: #eee;
+	font-size: 1.8em;
+	opacity: 0.95;
+}
+
+a {
+	color: #2EBD59;
+}
+
+a:hover {
+	color: #3FCC6A;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0A8A35;
+}
+
+.page-title {
+	border-bottom: 1px solid #123844;
+	margin-top: 10vh;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.bordered {
+	border-left: 5px solid #001515;
+}
+
+.section {
+	min-height: 70vh;
+	padding-top: 5vh;
+}
+
+.top-section {
+	padding-top: 15vh;
+	min-height: 50vh;
+}
+
+.image {
+	width: 100%;
+	border: 10px solid #00151f;
+	opacity: 0.9;
+}
+
+.image:hover {
+	opacity: 1;
+}
+
+.shadowed {
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 2em;
+}
+
+.navbar-default {
+    border: 0;
+    padding: 0.6em;
+	background: linear-gradient(140deg, #022834, #001c28);
+	padding-bottom: 0;
+	box-shadow: 0px 0px 10px #00151f;
+}
+
+a.navbar-brand {
+	font-size: 1.8em;
+	text-indent: 0.2em;
+}
+
+a.navbar-brand:hover {
+	color: #eee !important; /* ???? */
+}
+
+ul.navbar-nav > li > a {
+	color: #eee !important;
+
+}
+
+.navbar-header {
+	border-bottom: 5px solid #2EBD59;
+}
+
+ul.navbar-nav > li:hover > a {
+	border-bottom: 5px solid #38e06a;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  color: #eee;
+}
+
+.underlined {
+	border-bottom: 5px solid #2EBD59;
+}
+
+
+.content {
+	background-color: #fefefe;
+	box-shadow: 0px 0px 4px #bbb;
+	border-radius: 1px;
+	color: black;
+	font-size: 0.8em;
+	padding: 100px;
+	padding-top: 40px;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.2em;
+	text-align: justify;
+}
