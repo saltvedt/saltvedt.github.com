@@ -257,10 +257,6 @@ blockquote {
 	overflow-wrap: anywhere;
 }
 
-.portfolio .about-outro {
-	margin: 42px 0 0;
-}
-
 .portfolio .section-heading {
 	display: flex;
 	align-items: center;
@@ -370,6 +366,11 @@ blockquote {
 	padding: 0 6px;
 }
 
+.portfolio .writing-original {
+	margin: 12px 0 0;
+	font-size: 16px;
+}
+
 .portfolio .writing-entry h3,
 .portfolio .lovdata-info h3 {
 	margin: 0;
@@ -457,10 +458,6 @@ blockquote {
 	.portfolio .contact-details {
 		padding: 0;
 		border: 0;
-	}
-
-	.portfolio .about-outro {
-		margin-top: 28px;
 	}
 
 	.portfolio .project {
