@@ -10,6 +10,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+html {
+	scrollbar-gutter: stable;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 	background: url(noise.png), linear-gradient(90deg, #022834, #001c28);
@@ -142,6 +152,12 @@ blockquote {
 	opacity: 1;
 }
 
+.portfolio::selection,
+.portfolio ::selection {
+	background: #2EBD59;
+	color: #001c28;
+}
+
 .portfolio .site-shell {
 	width: calc(100% - 96px);
 	max-width: 1160px;
@@ -186,6 +202,11 @@ blockquote {
 	text-decoration: none;
 }
 
+.portfolio .site-brand:hover,
+.portfolio .site-brand:focus {
+	text-decoration: none;
+}
+
 .portfolio .site-brand::after {
 	position: absolute;
 	right: 0;
@@ -220,8 +241,8 @@ blockquote {
 }
 
 .portfolio #about-title {
-	margin: 0 0 30px;
-	font-size: 24px;
+	margin: 0 0 24px;
+	font-size: 2rem;
 	font-weight: 300;
 }
 
@@ -235,8 +256,8 @@ blockquote {
 .portfolio .introduction {
 	max-width: 580px;
 	margin: 0;
-	font-size: clamp(30px, 3.3vw, 44px);
-	line-height: 1.35;
+	font-size: clamp(2rem, 1.6rem + 1vw, 2.4rem);
+	line-height: 1.6;
 	text-wrap: pretty;
 }
 
@@ -262,7 +283,7 @@ blockquote {
 	align-items: center;
 	gap: 32px;
 	margin: 0;
-	font-size: 30px;
+	font-size: 2.6rem;
 	font-weight: 300;
 }
 
@@ -288,7 +309,7 @@ blockquote {
 
 .portfolio .project-description h3 {
 	margin: 0 0 20px;
-	font-size: 30px;
+	font-size: 2.6rem;
 	font-weight: 300;
 	line-height: 1.25;
 }
@@ -314,11 +335,11 @@ blockquote {
 	border: 1px solid #123844;
 	border-radius: 4px;
 	background: #00151f;
-	transition: border-color 180ms ease, transform 180ms ease;
+	transition: border-color 180ms ease;
 }
 
-.portfolio .project-preview:hover {
-	transform: translateY(-4px);
+.portfolio .project-preview:hover,
+.portfolio .project-preview:focus-visible {
 	border-color: #2EBD59;
 }
 
@@ -374,7 +395,7 @@ blockquote {
 .portfolio .writing-entry h3,
 .portfolio .lovdata-info h3 {
 	margin: 0;
-	font-size: 24px;
+	font-size: 2.2rem;
 	font-weight: 300;
 	line-height: 1.5;
 }
@@ -438,12 +459,13 @@ blockquote {
 
 .reading-page .article-nav a {
 	padding: 8px 0;
+	border-bottom: 2px solid transparent;
 }
 
 .reading-page .article-nav a[aria-current="page"] {
 	color: #eee;
 	text-decoration: none;
-	border-bottom: 2px solid #2EBD59;
+	border-bottom-color: #2EBD59;
 }
 
 .reading-page .article-header {
@@ -456,9 +478,9 @@ blockquote {
 
 .reading-page .article-header h1 {
 	margin: 0;
-	font-size: clamp(30px, 4vw, 46px);
+	font-size: clamp(2.4rem, 2rem + 1vw, 3.2rem);
 	font-weight: 300;
-	line-height: 1.25;
+	line-height: 1.35;
 	hyphens: auto;
 	text-wrap: pretty;
 }
@@ -477,7 +499,7 @@ blockquote {
 .reading-page .article-prose h2 {
 	margin: 48px 0 24px;
 	font-family: 'Raleway', sans-serif;
-	font-size: 30px;
+	font-size: clamp(2.2rem, 2rem + 0.5vw, 2.6rem);
 	font-weight: 300;
 	line-height: 1.35;
 }
@@ -504,10 +526,6 @@ blockquote {
 	margin-top: 48px;
 	padding-top: 24px;
 	border-top: 1px solid #123844;
-}
-
-.portfolio .document-index {
-	max-width: 1020px;
 }
 
 .reading-page .document-scroll {
@@ -634,10 +652,6 @@ blockquote {
 	.portfolio .project-preview,
 	.portfolio .project-preview img {
 		transition: none;
-	}
-
-	.portfolio .project-preview:hover {
-		transform: none;
 	}
 }
 
