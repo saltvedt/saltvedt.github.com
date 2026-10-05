@@ -340,7 +340,78 @@ blockquote {
 	opacity: 1;
 }
 
+.portfolio .writing-section {
+	padding: 16px 0 80px;
+}
+
+.portfolio .writing-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+	align-items: start;
+	gap: 64px;
+	margin-top: 40px;
+}
+
+.portfolio .writing-entry {
+	padding: 28px 0;
+	border-bottom: 1px solid #123844;
+}
+
+.portfolio .writing-entry:first-child {
+	padding-top: 0;
+}
+
+.portfolio .writing-meta {
+	margin: 0 0 12px;
+	font-size: 16px;
+}
+
+.portfolio .writing-meta span {
+	padding: 0 6px;
+}
+
+.portfolio .writing-entry h3,
+.portfolio .lovdata-info h3 {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.portfolio .writing-entry h3 a {
+	text-decoration: none;
+}
+
+.portfolio .writing-entry h3 a:hover {
+	text-decoration: underline;
+}
+
+.portfolio .lovdata-info {
+	padding: 28px;
+	border: 1px solid #123844;
+	border-left: 3px solid #2EBD59;
+	border-radius: 4px;
+	background: #00151f;
+}
+
+.portfolio .lovdata-info p {
+	margin: 20px 0;
+}
+
+.portfolio .lovdata-links {
+	display: grid;
+	gap: 12px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 @media (max-width: 900px) {
+	.portfolio .writing-grid {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 32px;
+	}
+
 	.portfolio .about-grid {
 		gap: 36px;
 		grid-template-columns: 1.2fr 1fr;
@@ -362,10 +433,14 @@ blockquote {
 	}
 
 	.portfolio .header-inner {
-		min-height: 88px;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+		padding: 20px 0;
 	}
 
 	.portfolio .site-nav {
+		flex-wrap: wrap;
 		gap: 20px;
 	}
 
